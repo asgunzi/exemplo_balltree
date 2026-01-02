@@ -95,8 +95,10 @@ print(f"Ball Tree query time: {balltree_query_time:.4f} s")
 ```
 
 Fazendo o mesmo em força bruta para comparar, deu:
-Balltree: 0.0025 s
-Força Bruta: 0.0338
+
+- Balltree: 0.0025 s
+- Força Bruta: 0.0338
+
 Ou seja, o Balltree ganha facilmente.
 
 Outro exemplo. Quero pegar os 5 pontos de entrega mais próximos de SP. Note que k = 5 na query.
