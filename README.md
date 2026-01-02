@@ -114,9 +114,14 @@ for i, (pt, d) in enumerate(zip(neighbors, dist_sp_km), 1):
     print(f"{i}: lat={pt[0]:.4f}, lon={pt[1]:.4f}, dist={d:.2f} km")
 ```
 
+
 Resultando em:
+
 ![](random_numbers.png)
 
+
+Notebook completo:
+[https://github.com/asgunzi/exemplo_balltree/blob/main/exemplo_balltree.ipynb](https://github.com/asgunzi/exemplo_balltree/blob/main/exemplo_balltree.ipynb)
 
 
 
