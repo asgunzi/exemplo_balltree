@@ -12,9 +12,12 @@ A ideia é utilizar a estrutura intrínseca das coordenadas para facilitar a bus
 
 Considere que a Terra é modelada por uma esfera perfeita (o que não é totalmente verdade), e que as latitudes e longitudes são os ângulos formados a partir do centro da esfera. As latitudes vão de 0 (linha do Equador) a +-90 graus (polos norte e sul). As longitudes vão de 0 (meridiano de Greenwich) a +-180 graus.
 Latitude e Longitude (desenho da Wikipedia)
+![](FedStats_Lat_long.svg.png)
 
 Exemplo, o centro de São Paulo é dado por: 
 (-23.5504, -46.6332)
+
+![](praca_se.png)
 
 Há uma estrutura na informação de latitude e longitude. Por exemplo, um ponto com latitude (+40.2, +30.9) vai ser naturalmente muito mais distante do centro de SP do que outro com latitude (-23.8, -47.9), porque as diferenças de coordenadas são menores.
 
@@ -23,6 +26,7 @@ Então, porque não utilizar essa característica a nosso favor? É exatamente o
 Conforme o próprio nome dá uma dica, é uma árvore de buscas sobre bolas, regiões, para filtrar somente a vizinhança próxima e ignorar os pontos menos promissores.
 
 O chatGPT construiu uma figura assim para explicar o algoritmo.
+![](balltree_conceptual.png)
 
 A complexidade de construção da árvore é da ordem n*log(n), e a de busca, log(n).
 
@@ -111,6 +115,8 @@ for i, (pt, d) in enumerate(zip(neighbors, dist_sp_km), 1):
 ```
 
 Resultando em:
+![](random_numbers.png)
+
 
 
 
